@@ -1,5 +1,6 @@
 #!/bin/bash
-python2 -m pip install argparse
-python2 -m pip install requests
+python3 -m venv gopherus
+source gopherus/bin/activate
+pip3 install -r requirements.txt
 chmod +x gopherus.py
 ln -sf $(pwd)/gopherus.py /usr/local/bin/gopherus
